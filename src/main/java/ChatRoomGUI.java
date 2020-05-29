@@ -10,6 +10,21 @@ public class ChatRoomGUI extends JFrame{
     private JPanel topPanel;
     private JTextField searchPanel;
     private JButton searchButton;
+    private JButton fredButton;
+    private JButton jamyButton;
+    private JButton davidButton;
+    private JButton marieButton;
+    private JButton angeloButton;
+    private JButton jingyangButton;
+    private JButton redoineButton;
+    private JButton martinButton;
+    private JButton lolaButton;
+    private JButton eliseButton;
+    private JButton valérianButton;
+    private JButton filippoButton;
+    private JButton antoineButton;
+    private JButton julienButton;
+    private JButton julieButton;
 
     public ChatRoomGUI(){
 
@@ -29,5 +44,25 @@ public class ChatRoomGUI extends JFrame{
 
     public static void main(String[] args){
         new ChatRoomGUI();
+    }
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+        julieButton = new JButton(new ImageIcon("perso.png"));
+        filippoButton = new JButton(new ImageIcon("perso.png"));
+        martinButton = new JButton(new ImageIcon("perso.png"));
+        jingyangButton = new JButton(new ImageIcon("perso.png"));
+        valérianButton = new JButton(new ImageIcon("perso.png"));
+        lolaButton = new JButton(new ImageIcon("perso.png"));
+        angeloButton = new JButton(new ImageIcon("perso.png"));
+        antoineButton = new JButton(new ImageIcon("perso.png"));
+        redoineButton = new JButton(new ImageIcon("perso.png"));
+        jamyButton = new JButton(new ImageIcon("perso.png"));
+        marieButton = new JButton(new ImageIcon("perso.png"));
+        julienButton = new JButton(new ImageIcon("perso.png"));
+        eliseButton = new JButton(new ImageIcon("perso.png"));
+        fredButton = new JButton(new ImageIcon("perso.png"));
+        jamyButton = new JButton(new ImageIcon("perso.png"));
+
     }
 }
