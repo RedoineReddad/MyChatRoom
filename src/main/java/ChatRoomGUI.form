@@ -11,7 +11,7 @@
     </properties>
     <border type="none"/>
     <children>
-      <grid id="3f0c2" binding="ecrirePanel" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="3f0c2" binding="ecrirePanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
@@ -43,7 +43,7 @@
           </component>
           <component id="2de7" class="javax.swing.JEditorPane" binding="editorPanel">
             <constraints>
-              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="900" height="50"/>
                 <maximum-size width="900" height="50"/>
               </grid>
@@ -52,7 +52,7 @@
           </component>
           <component id="44e52" class="javax.swing.JButton" binding="sendButton" default-binding="true">
             <constraints>
-              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
                 <preferred-size width="90" height="50"/>
                 <maximum-size width="90" height="50"/>
               </grid>
@@ -67,7 +67,7 @@
           </component>
         </children>
       </grid>
-      <grid id="b71d8" binding="topPanel" custom-create="true" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="b71d8" binding="topPanel" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="20" left="10" bottom="0" right="0"/>
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
@@ -95,172 +95,46 @@
           </component>
           <component id="106bc" class="javax.swing.JButton" binding="searchButton">
             <constraints>
-              <grid row="0" column="1" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="1" row-span="3" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <text value="Search"/>
             </properties>
           </component>
-          <grid id="58fc9" layout-manager="GridLayoutManager" row-count="5" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="3dbc9" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties/>
             <border type="none"/>
-            <children>
-              <component id="c102c" class="javax.swing.JButton" binding="angeloButton" custom-create="true" default-binding="true">
-                <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <horizontalTextPosition value="0"/>
-                  <text value="Angelo"/>
-                  <verticalTextPosition value="3"/>
-                </properties>
-              </component>
-              <component id="960f" class="javax.swing.JButton" binding="jingyangButton" default-binding="true">
-                <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <horizontalTextPosition value="0"/>
-                  <text value="Jingyang"/>
-                  <verticalTextPosition value="3"/>
-                </properties>
-              </component>
-              <component id="792ea" class="javax.swing.JButton" binding="redoineButton" custom-create="true" default-binding="true">
-                <constraints>
-                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <horizontalTextPosition value="0"/>
-                  <text value="Redoine"/>
-                  <verticalTextPosition value="3"/>
-                </properties>
-              </component>
-              <component id="ac942" class="javax.swing.JButton" binding="martinButton" custom-create="true" default-binding="true">
-                <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <horizontalTextPosition value="0"/>
-                  <text value="Martin"/>
-                  <verticalTextPosition value="3"/>
-                </properties>
-              </component>
-              <component id="13407" class="javax.swing.JButton" binding="lolaButton" custom-create="true" default-binding="true">
-                <constraints>
-                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <horizontalTextPosition value="0"/>
-                  <text value="Lola"/>
-                  <verticalTextPosition value="3"/>
-                </properties>
-              </component>
-              <component id="3f354" class="javax.swing.JButton" binding="eliseButton" custom-create="true" default-binding="true">
-                <constraints>
-                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <horizontalTextPosition value="0"/>
-                  <text value="Elise"/>
-                  <verticalTextPosition value="3"/>
-                </properties>
-              </component>
-              <component id="bf638" class="javax.swing.JButton" binding="valérianButton" custom-create="true" default-binding="true">
-                <constraints>
-                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <horizontalTextPosition value="0"/>
-                  <text value="Valérian"/>
-                  <verticalTextPosition value="3"/>
-                </properties>
-              </component>
-              <component id="95bac" class="javax.swing.JButton" binding="marieButton" custom-create="true" default-binding="true">
-                <constraints>
-                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <horizontalTextPosition value="0"/>
-                  <text value="Marie"/>
-                  <verticalTextPosition value="3"/>
-                </properties>
-              </component>
-              <component id="e1f78" class="javax.swing.JButton" binding="davidButton" custom-create="true" default-binding="true">
-                <constraints>
-                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <horizontalTextPosition value="0"/>
-                  <text value="David"/>
-                  <verticalTextPosition value="3"/>
-                </properties>
-              </component>
-              <component id="ae802" class="javax.swing.JButton" binding="fredButton" custom-create="true" default-binding="true">
-                <constraints>
-                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <horizontalTextPosition value="0"/>
-                  <text value="Fred"/>
-                  <verticalTextPosition value="3"/>
-                </properties>
-              </component>
-              <component id="b9c76" class="javax.swing.JButton" binding="jamyButton" custom-create="true" default-binding="true">
-                <constraints>
-                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <horizontalTextPosition value="0"/>
-                  <text value="Jamy"/>
-                  <verticalTextPosition value="3"/>
-                </properties>
-              </component>
-              <component id="bd2d4" class="javax.swing.JButton" binding="filippoButton" custom-create="true" default-binding="true">
-                <constraints>
-                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <horizontalTextPosition value="0"/>
-                  <text value="Filippo"/>
-                  <verticalTextPosition value="3"/>
-                </properties>
-              </component>
-              <component id="5000c" class="javax.swing.JButton" binding="antoineButton" custom-create="true" default-binding="true">
-                <constraints>
-                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <horizontalTextPosition value="0"/>
-                  <text value="Antoine"/>
-                  <verticalTextPosition value="3"/>
-                </properties>
-              </component>
-              <component id="669e5" class="javax.swing.JButton" binding="julienButton" custom-create="true" default-binding="true">
-                <constraints>
-                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <horizontalTextPosition value="0"/>
-                  <text value="Julien"/>
-                  <verticalTextPosition value="3"/>
-                </properties>
-              </component>
-              <component id="30099" class="javax.swing.JButton" binding="julieButton" custom-create="true" default-binding="true">
-                <constraints>
-                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <horizontalTextPosition value="0"/>
-                  <text value="Julie"/>
-                  <verticalTextPosition value="3"/>
-                </properties>
-              </component>
-            </children>
+            <children/>
           </grid>
+        </children>
+      </grid>
+      <grid id="20a95" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="ad419" class="javax.swing.JLabel" binding="logo" custom-create="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value=""/>
+            </properties>
+          </component>
+          <vspacer id="f5c67">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
         </children>
       </grid>
     </children>
