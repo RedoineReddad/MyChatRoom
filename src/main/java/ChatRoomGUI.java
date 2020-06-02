@@ -2,17 +2,19 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class ChatRoomGUI extends JFrame{
     private JPanel mainPanel;
     private JPanel ecrirePanel;
     private JLabel MessageLabel;
-    private JEditorPane editorPanel;
     private JButton sendButton;
     private JPanel topPanel;
     private JTextField searchPanel;
     private JButton searchButton;
     private JLabel logo;
+    private JTextArea textArea1;
     private JLabel label1;
 
 
@@ -30,6 +32,17 @@ public class ChatRoomGUI extends JFrame{
         frame.pack();
         frame.setVisible(true);
 
+        searchButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                ScreenContactGUI goContact = new ScreenContactGUI();
+                goContact.setVisible(true);
+                goContact.pack();
+                goContact.setLocationRelativeTo(null);
+                goContact.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            }
+        });
     }
 
     public static void main(String[] args){

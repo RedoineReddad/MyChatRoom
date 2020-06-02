@@ -3,13 +3,6 @@ import java.awt.*;
 
 public class RegisterGUI {
     private JPanel mainPanel;
-    private JTextField textField1;
-    private JTextField textField2;
-    private JTextField textField3;
-    private JButton sendButton;
-    private JLabel profil1;
-    private JLabel profil2;
-    private JLabel profil3;
 
     public RegisterGUI() {
 
@@ -27,10 +20,5 @@ public class RegisterGUI {
         new RegisterGUI();
     }
 
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
-        profil1 = new JLabel(new ImageIcon("perso.png"));
-        profil2 = new JLabel(new ImageIcon("perso.png"));
-        profil3 = new JLabel(new ImageIcon("perso.png"));
-    }
+
 }

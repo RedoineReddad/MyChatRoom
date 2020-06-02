@@ -2,6 +2,8 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class ScreenContactGUI {
 
@@ -161,6 +163,17 @@ public class ScreenContactGUI {
                 searchContactField.setText(eliseBottonText);
             }
         });
+        searchButton.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                ChatRoomGUI goChat = new ChatRoomGUI();
+                goChat.setVisible(true);
+                goChat.pack();
+                goChat.setLocationRelativeTo(null);
+                goChat.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            }
+        });
     }
 
     public static void main(String[] args) {
@@ -184,6 +197,22 @@ public class ScreenContactGUI {
         lolaButton = new JButton(new ImageIcon("perso.png"));
         jingyangButton = new JButton(new ImageIcon("perso.png"));
         eliseButton = new JButton(new ImageIcon("perso.png"));
+
+    }
+
+    public void setVisible(boolean b) {
+
+    }
+
+    public void pack() {
+
+    }
+
+    public void setLocationRelativeTo(Object o) {
+
+    }
+
+    public void setDefaultCloseOperation(int exitOnClose) {
 
     }
 }
