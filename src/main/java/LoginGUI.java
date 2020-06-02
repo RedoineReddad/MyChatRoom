@@ -35,18 +35,24 @@ public class LoginGUI {
                 System.exit(0);
             }
         });
+
         button1.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
+                LoginGUI sizeLogin = new LoginGUI();
+                sizeLogin.setExtendedState(JFrame.ICONIFIED);
+
             }
         });
+
         cancelButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.exit(0);
             }
         });
+
         loginButton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -59,19 +65,22 @@ public class LoginGUI {
 
             }
         });
-       /* createANewAccountButton.addMouseListener(new MouseAdapter() {
+
+        createANewAccountButton.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 super.mouseClicked(e);
-                RegisterGUI goRegisterGUI = new RegisterGUI();
-                goRegisterGUI.setVisible(true);
-                goRegisterGUI.pack();
-                goRegisterGUI.setLocationRelativeTo(null);
-                goRegisterGUI.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+                RegisterGUI goRegister = new RegisterGUI();
+                goRegister.setVisible(true);
+                goRegister.pack();
+                goRegister.setLocationRelativeTo(null);
+                goRegister.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
-        });*/
+        });
     }
 
+    private void setExtendedState(int iconified) {
+    }
 
 
     public static void main(String[] args) {
@@ -79,4 +88,15 @@ public class LoginGUI {
     }
 
 
+    public void setVisible(boolean b) {
+    }
+
+    public void pack() {
+    }
+
+    public void setLocationRelativeTo(Object o) {
+    }
+
+    public void setDefaultCloseOperation(int exitOnClose) {
+    }
 }
