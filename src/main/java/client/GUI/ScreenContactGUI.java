@@ -1,3 +1,5 @@
+package client.GUI;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -182,21 +184,21 @@ public class ScreenContactGUI {
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
-        julienButton = new JButton(new ImageIcon("perso.png"));
-        fredButton = new JButton(new ImageIcon("perso.png"));
-        jamyButton = new JButton(new ImageIcon("perso.png"));
-        daphnéButton = new JButton(new ImageIcon("perso.png"));
-        filippoButton = new JButton(new ImageIcon("perso.png"));
-        angeloButton = new JButton(new ImageIcon("perso.png"));
-        marieButton = new JButton(new ImageIcon("perso.png"));
-        davidButton = new JButton(new ImageIcon("perso.png"));
-        redoineButton = new JButton(new ImageIcon("perso.png"));
-        valérianButton = new JButton(new ImageIcon("perso.png"));
-        jBButton = new JButton(new ImageIcon("perso.png"));
-        martinButton = new JButton(new ImageIcon("perso.png"));
-        lolaButton = new JButton(new ImageIcon("perso.png"));
-        jingyangButton = new JButton(new ImageIcon("perso.png"));
-        eliseButton = new JButton(new ImageIcon("perso.png"));
+        julienButton = new JButton(new ImageIcon(getClass().getResource("/Image/perso.png")));
+        fredButton = new JButton(new ImageIcon(getClass().getResource("/Image/perso.png")));
+        jamyButton = new JButton(new ImageIcon(getClass().getResource("/Image/perso.png")));
+        daphnéButton = new JButton(new ImageIcon(getClass().getResource("/Image/perso.png")));
+        filippoButton = new JButton(new ImageIcon(getClass().getResource("/Image/perso.png")));
+        angeloButton = new JButton(new ImageIcon(getClass().getResource("/Image/perso.png")));
+        marieButton = new JButton(new ImageIcon(getClass().getResource("/Image/perso.png")));
+        davidButton = new JButton(new ImageIcon(getClass().getResource("/Image/perso.png")));
+        redoineButton = new JButton(new ImageIcon(getClass().getResource("/Image/perso.png")));
+        valérianButton = new JButton(new ImageIcon(getClass().getResource("/Image/perso.png")));
+        jBButton = new JButton(new ImageIcon(getClass().getResource("/Image/perso.png")));
+        martinButton = new JButton(new ImageIcon(getClass().getResource("/Image/perso.png")));
+        lolaButton = new JButton(new ImageIcon(getClass().getResource("/Image/perso.png")));
+        jingyangButton = new JButton(new ImageIcon(getClass().getResource("/Image/perso.png")));
+        eliseButton = new JButton(new ImageIcon(getClass().getResource("/Image/perso.png")));
 
     }
 

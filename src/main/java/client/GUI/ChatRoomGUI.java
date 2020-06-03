@@ -1,7 +1,7 @@
+package client.GUI;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -11,7 +11,6 @@ public class ChatRoomGUI extends JFrame{
     private JLabel MessageLabel;
     private JButton sendButton;
     private JPanel topPanel;
-    private JTextField searchPanel;
     private JButton searchButton;
     private JLabel logo;
     private JTextArea textArea1;
@@ -51,8 +50,8 @@ public class ChatRoomGUI extends JFrame{
 
     private void createUIComponents() {
         // TODO: place custom component creation code here
-        label1 = new JLabel(new ImageIcon("background.jpg"));
-        logo = new JLabel(new ImageIcon("logo.jpg"));
+        label1 = new JLabel(new ImageIcon("/Image/background.jpg"));
+        logo = new JLabel(new ImageIcon("/Image/logo.jpg"));
     }
 }
 
