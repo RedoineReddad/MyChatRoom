@@ -9,12 +9,13 @@ public class RegisterGUI {
     private JButton returnButton;
     private JButton addButton;
     private JTextField first_nameTextField;
-    private JTextField passwordTextField1;
     private JTextField usernameTextField;
-    private JTextField passwordTextField;
     private JTextField mailTextField;
     private JButton Closebutton;
     private JButton SizeButton;
+    private JPasswordField passwordPasswordField;
+    private JPasswordField passwordPasswordField1;
+    private JCheckBox checkBox1;
 
     public RegisterGUI() {
 
@@ -183,43 +184,55 @@ public class RegisterGUI {
                 }
             }
         });
-        passwordTextField.addFocusListener(new FocusAdapter() {
+        passwordPasswordField.addFocusListener(new FocusAdapter() {
             @Override
             public void focusGained(FocusEvent e) {
                 super.focusGained(e);
-                if (passwordTextField.getText().trim().toLowerCase().equals("password")){
-                    passwordTextField.setText(" ");
-                    passwordTextField.setForeground(Color.black);
+                if (passwordPasswordField.getText().trim().toLowerCase().equals("password")){
+                    passwordPasswordField.setText(" ");
+                    passwordPasswordField.setForeground(Color.black);
                 }
             }
         });
-        passwordTextField.addFocusListener(new FocusAdapter() {
+        passwordPasswordField.addFocusListener(new FocusAdapter() {
             @Override
             public void focusLost(FocusEvent e) {
                 super.focusLost(e);
-                if (passwordTextField.getText().trim().equals("") || passwordTextField.getText().trim().toLowerCase().equals("password")){
-                    passwordTextField.setText("password");
-                    passwordTextField.setForeground(new Color(153,153,153));
+                if (passwordPasswordField.getText().trim().equals("") || passwordPasswordField.getText().trim().toLowerCase().equals("password")){
+                    passwordPasswordField.setText("password");
+                    passwordPasswordField.setForeground(new Color(153,153,153));
                 }
             }
         });
-        passwordTextField1.addFocusListener(new FocusAdapter() {
+        passwordPasswordField1.addFocusListener(new FocusAdapter() {
             @Override
             public void focusGained(FocusEvent e) {
                 super.focusGained(e);
-                if (passwordTextField1.getText().trim().toLowerCase().equals("password")){
-                    passwordTextField1.setText(" ");
-                    passwordTextField1.setForeground(Color.black);
+                if (passwordPasswordField1.getText().trim().toLowerCase().equals("password")){
+                    passwordPasswordField1.setText(" ");
+                    passwordPasswordField1.setForeground(Color.black);
                 }
             }
         });
-        passwordTextField1.addFocusListener(new FocusAdapter() {
+        passwordPasswordField1.addFocusListener(new FocusAdapter() {
             @Override
             public void focusLost(FocusEvent e) {
                 super.focusLost(e);
-                if (passwordTextField1.getText().trim().equals("") || passwordTextField1.getText().trim().toLowerCase().equals("password")){
-                    passwordTextField1.setText("password");
-                    passwordTextField1.setForeground(new Color(153,153,153));
+                if (passwordPasswordField1.getText().trim().equals("") || passwordPasswordField1.getText().trim().toLowerCase().equals("password")){
+                    passwordPasswordField1.setText("password");
+                    passwordPasswordField1.setForeground(new Color(153,153,153));
+                }
+            }
+        });
+        checkBox1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(checkBox1.isSelected()){
+                    passwordPasswordField.setEchoChar((char)0);
+                    passwordPasswordField1.setEchoChar((char)0);
+                }else{
+                    passwordPasswordField.setEchoChar('*');
+                    passwordPasswordField1.setEchoChar('*');
                 }
             }
         });

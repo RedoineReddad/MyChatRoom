@@ -11,12 +11,13 @@ public class LoginGUI {
 
     private JPanel LoginPanel;
     private JTextField usernameTextField;
-    private JTextField passwordTextField;
     private JButton cancelButton;
     private JButton loginButton;
     private JButton createANewAccountButton;
     private JButton button1;
     private JButton xButton;
+    private JPasswordField passwordPasswordField;
+    private JCheckBox showPassCheckBox;
 
     public LoginGUI() {
 
@@ -101,23 +102,23 @@ public class LoginGUI {
             }
         });
 
-        passwordTextField.addFocusListener(new FocusAdapter() {
+        passwordPasswordField.addFocusListener(new FocusAdapter() {
             @Override
             public void focusGained(FocusEvent e) {
                 super.focusGained(e); //disparition du text password et apparition du nouveau text
-                if (passwordTextField.getText().trim().toLowerCase().equals("password")){
-                    passwordTextField.setText(" ");
-                    passwordTextField.setForeground(Color.black);
+                if (passwordPasswordField.getText().trim().toLowerCase().equals("password")){
+                    passwordPasswordField.setText(" ");
+                    passwordPasswordField.setForeground(Color.black);
                 }
             }
         });
-        passwordTextField.addFocusListener(new FocusAdapter() {
+        passwordPasswordField.addFocusListener(new FocusAdapter() {
             @Override
             public void focusLost(FocusEvent e) {
                 super.focusLost(e); //réaparition du text password
-                if(passwordTextField.getText().trim().equals("") || passwordTextField.getText().trim().toLowerCase().equals("password")){
-                    passwordTextField.setText("password");
-                    passwordTextField.setForeground(new Color(153,153,153));
+                if(passwordPasswordField.getText().trim().equals("") || passwordPasswordField.getText().trim().toLowerCase().equals("password")){
+                    passwordPasswordField.setText("password");
+                    passwordPasswordField.setForeground(new Color(153,153,153));
                 }
             }
         });
@@ -202,7 +203,7 @@ public class LoginGUI {
                 createANewAccountButton.setBackground(new Color(46,49,49));
             }
         });
-        loginButton.addActionListener(new ActionListener() {
+        /*loginButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 PreparedStatement stmt;
@@ -219,6 +220,16 @@ public class LoginGUI {
 
 
 
+            }
+        });*/
+        showPassCheckBox.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (showPassCheckBox.isSelected()){
+                    passwordPasswordField.setEchoChar((char)0);
+                }else {
+                    passwordPasswordField.setEchoChar('*');
+                }
             }
         });
     }
