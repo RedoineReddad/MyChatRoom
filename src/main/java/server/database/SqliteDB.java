@@ -1,3 +1,5 @@
+package server.database;
+
 import java.sql.*;
 
 public class SqliteDB {

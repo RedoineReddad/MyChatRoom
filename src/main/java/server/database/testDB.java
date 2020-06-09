@@ -1,4 +1,7 @@
-import java.sql.Connection;
+package server.database;
+
+import server.database.SqliteDB;
+
 import java.sql.SQLException;
 
 public class testDB {

@@ -1,4 +1,4 @@
-package client.GUI;
+package client.gui;
 
 import javax.swing.*;
 import java.awt.*;
@@ -15,7 +15,6 @@ public class ChatRoomGUI extends JFrame{
     private JLabel logo;
     private JTextArea textArea1;
     private JLabel label1;
-
 
     public ChatRoomGUI(){
 
