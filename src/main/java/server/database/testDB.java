@@ -12,7 +12,7 @@ public class testDB {
 
         SqliteDB db = new SqliteDB();
 
-        db.executeQuery(query1);
+        //db.executeQuery(query1);
 
         db.listUsers();
 

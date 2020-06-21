@@ -16,7 +16,8 @@ public class SqliteDB {
         }
     }
 
-    public void listUsers() {
+    public String listUsers() {
+        String list = "";
         try {
             this.stmt = c.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT * FROM Users");
@@ -28,13 +29,14 @@ public class SqliteDB {
                 String mail = rs.getString("mail");
                 String Password = rs.getString("Password");
 
-
+                list = ID + " " + First_Name + " " + Last_Name + " " + mail + " " + Password;
                 System.out.println(ID + " " + First_Name + " " + Last_Name + " " + mail + " " + Password);
-
+                return list;
             }
         } catch (Exception e) {
             System.out.println("Error : " + e.getMessage());
         }
+        return list;
     }
 
     public void closeConnection() {
